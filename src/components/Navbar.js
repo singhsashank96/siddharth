@@ -9,7 +9,7 @@ function Navbar() {
         <a href="/html/homepage.html#schedule-section">Schedule</a>
         <a href="/html/homepage.html#speakers-section">Speakers</a>
         <a href="/html/homepage.html#sponsors-section">Sponsors</a>
-        <a href="/html/homepage.html#get-tickets-section">Info</a>
+        <a href="/html/homepage.html#get-tickets-section">Info0</a>
       </section>
     </div>
   )
