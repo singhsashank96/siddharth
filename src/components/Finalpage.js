@@ -1,13 +1,21 @@
 import React from 'react'
-// import '../assets/style/finalpage.css';
+import './finelPage.css';
+import { useLocation  , Link} from 'react-router-dom';
+
 
 function Finalpage() {
+    const location = useLocation();
+
+    // Access the state object from the location
+    const { totalAmount } = location.state || {};
+    console.log(totalAmount)
     return (
         <div>
             <div className="navigation">
                 <div className="navigation_container">
-                    <a href="index.html" />
-                    <a href="#">Home</a>
+                    {/* <a href="index.html" /> */}
+                    <Link to="/">Home</Link>
+
                     <a href="#">About</a>
                     <a href="#">Speakers</a>
                     <a href="#">Schedule</a>
@@ -46,7 +54,7 @@ function Finalpage() {
                         </div>
                         <div className="cont-total">
                             <h2 id="cont-total-text" className="cont-total_text">Subtotal</h2>
-                            <h2 id="cont-total_rs-text" className="cont-total_rs">Rs.85000 </h2>
+                            <h2 id="cont-total_rs-text" className="cont-total_rs">Rs.{totalAmount} </h2>
                         </div>
                         <div className="final-service1">
                             <h2 id="final-service1-text-one" className="final-service1_text" />
@@ -56,7 +64,7 @@ function Finalpage() {
                         </div>
                         <div className="final-price">
                             <h1 id="final-price_final" className="final-price_text">Total</h1>
-                            <h1 id="final-price_rs_final" className="final-price_rs">Rs 85000.00</h1>
+                            <h1 id="final-price_rs_final" className="final-price_rs">Rs{totalAmount}</h1>
                         </div>
                     </div></section>
             </section>
