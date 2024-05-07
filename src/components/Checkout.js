@@ -68,7 +68,8 @@ function Checkout() {
                 <div className={styles.ticketContainer}>
                     <div className={`${styles.ContainerTicket} ${styles.silver}`}>
                         <div className={styles.ticketHeader}>
-                            <h2>PHASE 1-SILVER</h2>
+                            <div>  <h2>PHASE 1-SILVER</h2></div>
+                            <div>
                             <span className={styles.price}>Rs. 999</span>
                             <span className={styles.multiplication}>x</span>
                             <select
@@ -82,14 +83,20 @@ function Checkout() {
                                     </option>
                                 ))}
                             </select>
+
+                            </div>
+                          
                         </div>
                         <p style={{marginTop:'-9px' , color:'black'}}>This ticket grants entry to one person into the Silver section (standing only).</p>
                     </div>
 
                     <div className={`${styles.ContainerTicket} ${styles.gold}`}>
                         <div className={styles.ticketHeader}>
-                     <h2>PHASE 1-GOLD</h2>
-                     <span className={styles.price}>Rs. 1499</span>
+                            <div>
+                            <h2>PHASE 1-GOLD</h2>
+                            </div>
+                            <div>
+                            <span className={styles.price}>Rs. 1499</span>
                      <span className={styles.multiplication}>x</span>
                      <select
                                 name="tickets"
@@ -103,24 +110,23 @@ function Checkout() {
                                 ))}
                             </select>
                  
+                            </div>
+                  
+                
                   </div>
                   <p style={{marginTop:'-9px' , color:'black'}}>This ticket grants entry to one person into the Gold section (seated).</p>
                </div>
 
                <div className={`${styles.ContainerTicket} ${styles.gold}`}>
                         <div className={styles.ticketHeader}>
-                     <h2>PHASE 1-FANPIT</h2>
-                     <span class={styles.price}>Rs. 2499</span>
+                            <div>
+                            <h2>PHASE 1-FANPIT</h2>
+
+                            </div>
+                            <div>
+                            <span class={styles.price}>Rs. 2499</span>
                      <span class={styles.multiplication}>x</span>
-                     {/* <select name="tickets" class="number-of-tickets"  onChange={(event) => handleTicketQuantityChange(event, 2499)}>
-                        <option >0</option>
-                        <option >1</option>
-                        <option >2</option>
-                        <option >3</option>
-                        <option >4</option>
-                        <option >5</option>
-                        
-                     </select> */}
+                 
 
 <select
                                 name="tickets"
@@ -133,6 +139,8 @@ function Checkout() {
                                     </option>
                                 ))}
                             </select>
+                            </div>
+                
 
 
                   </div>
@@ -144,8 +152,12 @@ function Checkout() {
          
                   <div className={`${styles.ContainerTicket} ${styles.gold1}`}>
                         <div className={styles.ticketHeader}>
-                     <h2>GOLD TABLE (4-6PAX) | STANDING COCKTAIL TABLE</h2>
-                     <span class={styles.price}>Rs. 50000</span>
+                            <div>
+                            <h2>GOLD TABLE (4-6PAX) | STANDING COCKTAIL TABLE</h2>
+
+                            </div>
+                            <div>
+                            <span class={styles.price}>Rs. 50000</span>
                      <span class={styles.multiplication}>x</span>
                      <select
                                 name="tickets"
@@ -158,6 +170,8 @@ function Checkout() {
                                     </option>
                                 ))}
                             </select>
+                            </div>
+                 
                   </div>
                   <p style={{marginTop:'-9px' , color:'black'}}>2 bottles of premium liquor (whisky/vodka), 12 beers, unlimited chasers, veg/non veg starters, elevated stage, hassle-free entry, 2 special car parking passes, dedicated restrooms, security and service.</p>
                </div>
@@ -165,8 +179,10 @@ function Checkout() {
                
                   <div className={`${styles.ContainerTicket} ${styles.diamond}`}>
                         <div className={styles.ticketHeader}  style={{position:'relative'}}>
-                     <h2>DIAMOND TABLE (6-8 PAX) | SEATING SOFA  </h2> 
-                     <span className={styles.texketLeft} style={{position:'absolute'}}> Few Tickets Left</span> 
+                  <div>                     <h2>DIAMOND TABLE (6-8 PAX) | SEATING SOFA  </h2> 
+</div>
+<div>
+<span className={styles.texketLeft} style={{position:'absolute'}}> Few Tickets Left</span> 
                      <span class={styles.price}>Rs. 85000</span>
                      <span class={styles.multiplication}>x</span>
                      <select
@@ -180,17 +196,21 @@ function Checkout() {
                                     </option>
                                 ))}
                             </select>
+</div>
+                   
                   </div>
                   <p style={{marginTop:'-9px' , color:'black'}}>3 bottles of premium liquor (whisky/vodka), 18 beers, unlimited chasers, veg/non veg starters, elevated stage, hassle-free entry, 3 special car parking passes, dedicated restrooms, security and service.</p>
                </div>
 
                 </div>
-                <div className={styles.ticketHeader}>
-                            <span className={styles.totleText}>Total</span>
-                            <span className={styles.price} style={{marginLeft:'42rem' , fontWeight:'600'}}>Rs. {totalAmount}</span>
+                <div className={styles.total}>
+                            <span className={styles.finalhead}>Total</span>
+                            <span className={styles.finalprice} >Rs. {totalAmount}</span>
                           
                            
                         </div>
+                       
+
                 <div className=''>
               
                 <div>
