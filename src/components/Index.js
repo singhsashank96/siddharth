@@ -351,12 +351,12 @@ function Index() {
         </IconButton>
         <DialogContent >
        <div>
-        <div style={{marginTop:'20px' }}>
+        <div style={{marginTop:'20px' }}  className='soceil_icon_parent'>
             <div  className='sociel_icon_box'>
                 <div><img src='images/Facebook.png' /></div>
                 <div><img src='images/twitter.png' />
                 </div>            
-                    <div ><img src='images/print.png' className='print_img' /></div>
+                    <div ><img src='images/print.png' className='print_img'  style={{height:'29px'}} /></div>
                     <div><img src='images/tumblr1.png' /> </div>
 
             </div>
