@@ -64,8 +64,10 @@ function Checkout() {
            <p style={{marginTop:'-40px'}}>HITEX Exhibition Center   •   July 22 | 5PM</p>
          </div>
        </nav>
-       <section className={styles.body}>
-                <div className={styles.ticketContainer}>
+       <section >
+        <div style={{marginTop:'30px'}}>
+        <div  class={styles.checkOutConitainer}>
+        <div className={styles.ticketContainer}>
                     <div className={`${styles.ContainerTicket} ${styles.silver}`}>
                         <div className={styles.ticketHeader}>
                             <div>  <h2>PHASE 1-SILVER</h2></div>
@@ -204,6 +206,28 @@ function Checkout() {
 
                 </div>
                 <div className={styles.total}>
+            <span className={styles.finalhead}  style={{color: "#000" , fontFamily: "Inter" ,  fontSize: "20px" ,  fontWeight: "600"}}>Total</span>   
+            <span className={styles.finalprice}  style={{float:'right' , color: "#000" , fontFamily: "Inter" ,  fontSize: "20px" ,  fontWeight: "600"}}>Rs.{totalAmount}</span>  
+         </div>
+         {
+            totalAmount > 0 ?
+            <div className={`${styles.checkoutBtn} ${styles.check_new}`} onClick={sendAmount}>
+
+            <a   style={{position:'initial'}} href="./finalpage.html"   >Checkout</a>
+         </div>
+         :
+         <div className={`${styles.checkoutBtn} ${styles.check_new}`}>
+
+         <a   style={{position:'initial'}} href="./finalpage.html"  className={styles.disabled}  >Checkout</a>
+      </div>
+
+         }
+        
+        </div>
+        </div>
+       
+               
+                {/* <div className={styles.total}>
                             <span className={styles.finalhead}>Total</span>
                             <span className={styles.finalprice} >Rs. {totalAmount}</span>
                           
@@ -215,7 +239,7 @@ function Checkout() {
               
                 <div>
                 {totalAmount > 0 ? (
-                    <div className={styles.checkoutBtn}  onClick={sendAmount}>
+                    <div className={styles.checkoutBtn}   onClick={sendAmount}>
                         <a href="./finalpage.html" className="">
                             Checkout
                         </a>
@@ -228,8 +252,8 @@ function Checkout() {
                     </div>
                 )}
                 </div>
-                </div>
-               
+                </div> */}
+              
               
               
 
