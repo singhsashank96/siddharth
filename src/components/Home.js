@@ -10,10 +10,9 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import { AiFillCopy } from "react-icons/ai";
-import './index.css';
+import './Home.css';
 
 
-// import '../assets/style/index.css';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -114,7 +113,7 @@ function Index() {
       // }
   
     return (
-        <body>
+        <>
          <div class="head" id="forback">
      
     
@@ -370,7 +369,7 @@ function Index() {
       </BootstrapDialog>
     </React.Fragment>
     
-    </body>
+    </>
     )
 }
 

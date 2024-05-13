@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from './checkOut.module.css'; 
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 function Checkout() {
     const [ticketQuantities, setTicketQuantities] = useState({
         silver: 0,
@@ -43,27 +44,10 @@ function Checkout() {
     }
 
     return (
-        <body>
+        <>
              
-          
-             <nav className={styles.navbar}>
-         <br />
-         <br />
-         <img src="images/logo.svg" alt="Logo" className={styles.logo}/>  
-         <ul className={styles.navMenu}>
-           <li> <Link to="/">Home</Link></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Speakers</a></li>
-           <li><a href="#">Schedule</a></li>
-           <li><a href="#">Sponsors</a></li>
-           <li><a href="#">Info</a></li>
-         </ul>
-         <br/>
-         <div className={styles.textContainer}>
-           <p className={styles.para1}>The Inspire Summit</p>
-           <p style={{marginTop:'-40px'}}>HITEX Exhibition Center   •   July 22 | 5PM</p>
-         </div>
-       </nav>
+          <Navbar/>
+            
        <section >
         <div style={{marginTop:'30px'}}>
         <div  class={styles.checkOutConitainer}>
@@ -267,7 +251,7 @@ function Checkout() {
               <p>This is some footer text.</p>
             </footer>
           
-        </body>
+        </>
     );
 }
 

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 
-  const Index = lazy(() => import('./components/Index'));
+  const Home = lazy(() => import('./components/Home'));
   const Checkout = lazy(() => import('./components/Checkout'));
   const Finalpage = lazy(() => import('./components/Finalpage'));
 
@@ -11,7 +11,7 @@ import { Suspense, lazy } from 'react';
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              <Route path='/' element={<Index />} />
+              <Route path='/' element={<Home />} />
               <Route path='/checkout' element={<Checkout />} />
               <Route path='/finalpage' element={<Finalpage />} />
             </Routes>
