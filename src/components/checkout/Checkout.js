@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import styles from './checkOut.module.css'; 
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from '../navbar/Navbar';
+
 function Checkout() {
     const [ticketQuantities, setTicketQuantities] = useState({
         silver: 0,

@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 
-  const Home = lazy(() => import('./components/Home'));
-  const Checkout = lazy(() => import('./components/Checkout'));
-  const Finalpage = lazy(() => import('./components/Finalpage'));
+  const Home = lazy(() => import('./components/home/Home'));
+  const Checkout = lazy(() => import('./components/checkout/Checkout'));
+  const Finalpage = lazy(() => import('./components/finalpage/Finalpage'));
 
   function App() {
     return (

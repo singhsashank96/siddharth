@@ -1,5 +1,5 @@
 import React from 'react'
-import './finelPage.css';
+import './finalpage.css';
 import { useLocation, Link } from 'react-router-dom';
 
 

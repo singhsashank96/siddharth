@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './checkOut.module.css'; 
+import styles from '../checkout/checkOut.module.css'; 
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -8,7 +8,7 @@ function Navbar() {
     <nav className={styles.navbar}>
          <br />
          <br />
-         <img src="images/logo.svg" alt="Logo" className={styles.logo}/>  
+         <img src="assets/logos/frame.png" alt="Logo" className={styles.logo}/>  
          <ul className={styles.navMenu}>
            <li> <Link to="/">Home</Link></li>
            <li><a href="#">About</a></li>
