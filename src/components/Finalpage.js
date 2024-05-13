@@ -1,6 +1,6 @@
 import React from 'react'
 import './finelPage.css';
-import { useLocation  , Link} from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 
 function Finalpage() {
@@ -10,65 +10,94 @@ function Finalpage() {
     const { totalAmount } = location.state || {};
     console.log(totalAmount)
     return (
-        <div>
-            <div className="navigation">
-                <div className="navigation_container">
-                    {/* <a href="index.html" /> */}
-                    <Link to="/">Home</Link>
+        <>
+            <nav className="navbar">
+                <div className="logo-container">
+                    <img src="images/logo.svg" alt="Logo" className="logo" />
+                </div>
+                <ul className="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </nav>
+            <div className="Finel_div">
+                <div className="Finel_div_body">
+                    <div className="form_div">
+                        <div>
+                            <h1 id="add_details" className="detail--main_details heading">Add your Details</h1>
+                            <div className="form--main">
+                                <form name="myForm" id="registrationForm">
+                                    <div className="form-row">
+                                        <div className="form-group">
+                                            <label htmlFor="name">First Name</label>
+                                            <input type="text" id="name" name="name" className="full-width form_input" />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="email">Last Name</label>
+                                            <input type="email" id="email" name="email" className="full-width form_input" />
+                                        </div>
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="email">Email</label>
+                                        <input type="email" id="email" name="email" className="full-width form_input_email" />
+                                    </div>
+                                    <button type="submit" className="full-width fonm_btn">Continue</button>
+                                </form>
+                            </div>
 
-                    <a href="#">About</a>
-                    <a href="#">Speakers</a>
-                    <a href="#">Schedule</a>
-                    <a href="#">Info</a>
+                        </div>
+                    </div>
+                    <div className="table_div">
+                        <div className="price-entry">
+                            <h1 id="price-entry_text_inspire" className="price-entry_text">THE INSPIRE SUMMIT</h1>
+
+                            <div className="side-container">
+
+                            </div>
+                            <div className="price-entry_text_two">
+                                <h2 id="price-entry_text_apr" className="price-entry_apr">Apr 18, 2035, 8:30 AM</h2>
+                            </div>
+                            <div className="hitex">
+                                <h2 id="price-entry_hit" className="hitex_text">HITEX Exhibition Center</h2>
+                            </div>
+                            <div className="side-container">
+
+                            </div>
+                            <div className="inside-items">
+                            </div>
+                            <div className="cont-totala">
+                                <div> <h2 id="cont-total-text" >Subtotal</h2></div>
+                                <div> <h2 id="final-price_rs_final" >Rs <span id="totalAmount1">{totalAmount}</span></h2>
+                                </div>
+                            </div>
+                            <div className="final-service1">
+                                <h2 id="final-service1-text-one" className="final-service1_text"></h2>
+                                <h2 id="final-service1_rs-two" className="final-service1_rs"></h2>
+                            </div>
+                            <div className="side-container">
+
+                            </div>
+                            <div className="cont-totalb">
+                                <div> <h2 id="cont-total-text" >Total</h2></div>
+                                <div> <h1 id="final-price_rs_final" className="final-price_rs" style={{ paddingTop: '5px' }}>Rs <span id="totalAmount2">{totalAmount}</span></h1>
+                                </div>
+                            </div>
+                            <div className="final-service1">
+                                <h2 id="final-service1-text-one" className="final-service1_text"></h2>
+                                <h2 id="final-service1_rs-two" className="final-service1_rs"></h2>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            <section className="add-details">
-                <div className="detail--main_container">
-                    <h1 id="add_details" className="detail--main_details">Add your Details</h1>
-                    <div className="form--main">
-                        <form name="myForm" id="registrationForm">
-                            <label htmlFor="fname" id="first_name" className="form--main_text_firstname">First name</label><br /><br />
-                            <input type="text" id="fname" name="fname" required />
-                            <label htmlFor="lname" id="last_name" className="form--main_text_lastname">Last name</label><br /><br />
-                            <input type="text" id="lname" name="lname" required />
-                            <label id="email_name" className="form--main_text_email">Email</label><br /><br />
-                            <input type="email" id="form--main_email" name="Ename" aria-label="details_email" required />
-                            <input type="submit" defaultValue="Continue" className="form--main_continue" onsubmit="evaulate()" />
-                        </form>
-                    </div>
-                </div>
-                <section className="main2">
-                    <div className="price-entry">
-                        <h1 id="price-entry_text_inspire" className="price-entry_text">THE INSPIRE SUMMIT</h1>
-                        <div className="side-container">
-                        </div>
-                        <div className="price-entry_text_two">
-                            <h2 id="price-entry_text_apr" className="price-entry_apr">Apr 18, 2035, 8:30 AM</h2>
-                        </div>
-                        <div className="hitex">
-                            <h2 id="price-entry_hit" className="hitex_text">HITEX Exhibition Center</h2>
-                        </div>
-                        <div className="side-container">
-                        </div>
-                        <div className="inside-items">
-                        </div>
-                        <div className="cont-total">
-                            <h2 id="cont-total-text" className="cont-total_text">Subtotal</h2>
-                            <h2 id="cont-total_rs-text" className="cont-total_rs">Rs.{totalAmount} </h2>
-                        </div>
-                        <div className="final-service1">
-                            <h2 id="final-service1-text-one" className="final-service1_text" />
-                            <h2 id="final-service1_rs-two" className="final-service1_rs" />
-                        </div>
-                        <div className="side-container">
-                        </div>
-                        <div className="final-price">
-                            <h1 id="final-price_final" className="final-price_text">Total</h1>
-                            <h1 id="final-price_rs_final" className="final-price_rs">Rs{totalAmount}</h1>
-                        </div>
-                    </div></section>
-            </section>
-        </div>
+
+        </>
     )
 }
 
